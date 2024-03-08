@@ -1,4 +1,11 @@
-## Added File
+## Installation
+Run as administrator
+```PowerShell
+Install-Module -Name AudioDeviceCmdlets
+```
+
+
+## Grab the Added File
 DefaultCommunicationDevice.ps1 - is a file used to look for [Line 1 Virtual Audio Cable by Muzychenko](https://software.muzychenko.net/freeware/vac470lite.zip) and set it as the default communication device, this is ideal for using AI based Voice Changers. 
 
 You can use the Get-AudioDevice -List command to find the actual name of your device that you want to set as default communications (for recording) and replace the name with that. 
@@ -19,13 +26,6 @@ Set default audio device (playback/recording)
 Set default communication audio device (playback/recording)  
 Set volume and mute state of default audio device (playback/recording)  
 Set volume and mute state of default communication audio device (playback/recording)
-
-
-## Installation
-Run as administrator
-```PowerShell
-Install-Module -Name AudioDeviceCmdlets
-```
 
 
 ## Usage
