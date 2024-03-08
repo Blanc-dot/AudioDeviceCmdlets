@@ -1,3 +1,7 @@
+## Added File
+DefaultCommunicationDevice.ps1 - is a file used to look for [Line 1 Virtual Audio Cable by Muzychenko](https://software.muzychenko.net/freeware/vac470lite.zip) and set it as the default communication device, this is ideal for using AI based Voice Changers. You can use the Get-AudioDevice -List command to find the actual name of your device that you want to set as default communications (for recording) and replace the name with that. Then you just create a task scheduler task that calls that file, say 2 minutes after boot, in case you are running Steelseries Sonar, or some DAW, so it doesn't get changed by those devices. If on Discord change your mic input to your actual microphone name and not default, else you wont produce sound unless you have the voice changer running.
+
+
 ## Description
 AudioDeviceCmdlets is a suite of PowerShell Cmdlets to control audio devices on Windows
 
