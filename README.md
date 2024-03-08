@@ -1,6 +1,9 @@
 ## Added File
-DefaultCommunicationDevice.ps1 - is a file used to look for [Line 1 Virtual Audio Cable by Muzychenko](https://software.muzychenko.net/freeware/vac470lite.zip) and set it as the default communication device, this is ideal for using AI based Voice Changers. You can use the Get-AudioDevice -List command to find the actual name of your device that you want to set as default communications (for recording) and replace the name with that. Then you just create a task scheduler task that calls that file, say 2 minutes after boot, in case you are running Steelseries Sonar, or some DAW, so it doesn't get changed by those devices. If on Discord change your mic input to your actual microphone name and not default, else you wont produce sound unless you have the voice changer running.
+DefaultCommunicationDevice.ps1 - is a file used to look for [Line 1 Virtual Audio Cable by Muzychenko](https://software.muzychenko.net/freeware/vac470lite.zip) and set it as the default communication device, this is ideal for using AI based Voice Changers. 
 
+You can use the Get-AudioDevice -List command to find the actual name of your device that you want to set as default communications (for recording) and replace the name with that. 
+
+Then you can create a task scheduler task that calls "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" with the argument being "Path\To\DefaultCommunicationDevice.ps1" without the ""'s on both spots. Change the trigger to be at log on, delay task for, "2 minutes" which you manually type. You should not need to run it with highest privileges, but try it by running the task, if it doesn't, check that box, make sure the task is configured for Windows 10 as well.
 
 ## Description
 AudioDeviceCmdlets is a suite of PowerShell Cmdlets to control audio devices on Windows
