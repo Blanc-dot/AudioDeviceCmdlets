@@ -1,5 +1,5 @@
 ## Installation
-Run as administrator
+Run as administrator (powershell)
 ```PowerShell
 Install-Module -Name AudioDeviceCmdlets
 ```
