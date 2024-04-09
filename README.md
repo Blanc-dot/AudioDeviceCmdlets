@@ -12,6 +12,10 @@ You can use the Get-AudioDevice -List command to find the actual name of your de
 
 Then you can create a task scheduler task that calls "C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe" with the argument being "Path\To\DefaultCommunicationDevice.ps1" without the ""'s on both spots. Change the trigger to be at log on, delay task for, "2 minutes" which you manually type. You should not need to run it with highest privileges, but try it by running the task, if it doesn't, check that box, make sure the task is configured for Windows 10 as well.
 
+## Lastly
+This repo will not be updated, go to the official repo to see if any updates have happened, the only thing I use this for is setting my audio device on boot, nothing more nothing less.
+
+
 ## Description
 AudioDeviceCmdlets is a suite of PowerShell Cmdlets to control audio devices on Windows
 
